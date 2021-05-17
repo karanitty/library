@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+      <!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+      <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->	
+      <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="css/util.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <!-- <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%> -->
+      </ul>
+      <ul class = "nav navbar-right navbar-nav">
+        <!-- <li>
+          <a href="/login">Log In</a>
+        </li>
+        <li>
+          <a href="/signup">Sign Up</a>
+        </li> -->
+    </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Sign Up
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <!-- <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div> 
+  </div><!-- /cont -->
+  
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div>/cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <!-- <form action="#" class="col-lg-5-signin"  style = "width: 50%; margin-left: 25%;">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label" style="margin-left: 38%;">Email address</label>
+              <input type="email" class="form-control" id="email_signin" placeholder = "Enter your Email" required onchange = "return emailcheck()" aria-describedby="emailHelp">
+              <label for="error" class="form-label" id="error_email_signin"></label>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label" style="margin-left: 40%;">Password</label>
+              <input type="password" class="form-control" id="password_signin" placeholder = "Enter your Password" required onchange = "return passwordcheck()">
+              <label for="error" class="form-label" id="error_password_signin"></label>
+            </div>
+            <br>
+            <div class="mb-3">
+              <a href="signup.html" style="color:blue; margin-left: 28%;">No account? Create one right away</a>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary" style="margin-left: 40%;">Submit</button>
+          </form>                                      -->
+                 
+          <div class="limiter">
+            <div class="container-login100" style="background-image: url('images/alfons-morales-YLSwjSy7stw-unsplash.jpg');">
+              <div class="wrap-login100">
+                <form action="/signup" method="POST" class="login100-form validate-form" onsubmit = "return validation();">
+                  <!-- <span class="login100-form-logo">
+                    <i class="zmdi zmdi-landscape"></i>
+                  </span> -->
+        
+                  <span class="login100-form-title p-b-34 p-t-27">
+                    Enter your Details
+                  </span>
+
+                  <label style="text-align: center; color:black;"><%=value%></label><br>
+                  <div class="wrap-input100 validate-input" data-validate = "Enter Name">
+                    <input class="input100" type="text" name="name" placeholder="Name">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                  </div>
+                  <br>
+                  <div class="wrap-input100 validate-input" data-validate = "Enter Email">
+                    <input class="input100" type="text" name="email" placeholder="Email" id = "email_signup" onkeyup="return email_signup_check();">
+                    <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                  </div>
+                  <label for="error_email_signup" id="error_email_signup" style="text-align: center;"></label>
+                  <br>
+                  <div class="wrap-input100 validate-input" data-validate="Enter Password">
+                    <input class="input100" type="password" name="password" placeholder="Password (Minimum 8 characters)" id = "password1" onkeyup="return password1check();">
+                    <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                  </div>
+                  <label for="password1" id="error_password1" style="text-align: center;"></label>
+                  <br>
+                  <div class="wrap-input100 validate-input" data-validate="Re-enter Password">
+                    <input class="input100" type="password" name="pass" placeholder="Re-enter Password" id="password2" onkeyup="return password2check();">
+                    <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                  </div>
+                  <label for="password2" id="error_password2" style="text-align: center;"></label>
+                  <br>
+
+                  <div class="wrap-input100 validate-input" data-validate="Enter Phone">
+                    <input class="input100" type="tel" name="phone" placeholder="Phone Number" id = "phone" onkeyup="return mobile();">
+                    <span class="focus-input100" data-placeholder="&#xf098;"></span>
+                   
+                  </div>
+                  <label for="phone" id="error_phone" style="text-align: center;"></label>
+                  <br>
+                  <!-- <div class="contact100-form-checkbox">
+                    <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                    <label class="label-checkbox100" for="ckb1">
+                      Remember me
+                    </label>
+                  </div> -->
+        
+                  <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                      Register
+                    </button>
+                  </div>
+        
+                  <div class="text-center p-t-90">
+                    <a class="txt1" href="/login">
+                      Already an user?
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                                                                                             
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+  <script src="js/validate_signup.js"></script>
+	</body>
+</html>
